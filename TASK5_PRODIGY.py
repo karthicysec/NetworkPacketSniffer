@@ -1,7 +1,7 @@
 import scapy.all as scapy
 
 def sniff_packets(interface):
-    scapy.sniff(iface="MediaTek Wi-Fi 6 MT7921 Wireless LAN Card", store=False, prn=process_packet)
+    scapy.sniff(iface="ech0", store=False, prn=process_packet)
 
 def process_packet(packet):
     if packet.haslayer(scapy.IP):
@@ -15,5 +15,5 @@ def process_packet(packet):
             payload = packet[scapy.Raw].load
             print(f"[*] Payload: {payload}")
 
-interface = "MediaTek Wi-Fi 6 MT7921 Wireless LAN Card"  # Change this to your Wi-Fi interface name
+interface = "ech0"  # Change this to your Wi-Fi interface name
 sniff_packets(interface)
