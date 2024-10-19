@@ -1,5 +1,5 @@
 # PRODIGY_TASK_05
-**Network Packet Analyzer (Packet Sniffer) 
+Network Packet Analyzer (Packet Sniffer) 
 
 **Introduction:**
 This packet sniffer tool is developed for educational purposes to capture and analyze network packets on Windows systems. It allows users to inspect the traffic on their network, displaying relevant information such as source and destination IP addresses, protocols, and payload data. 
